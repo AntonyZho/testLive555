@@ -531,6 +531,8 @@ int main(int argc, char** argv) {
 	UsageEnvironment* env = BasicUsageEnvironment::createNew(*scheduler);
 
 
+
+
 	auto t(std::make_shared<std::thread>([&]() {
 		env->taskScheduler().doEventLoop(&eventLoopWatchVariable);
 	}));
